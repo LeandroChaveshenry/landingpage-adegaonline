@@ -972,6 +972,10 @@ section.contato {
     background-color: #00acee; /* Cor do Twitter */
 }
 
+.social-btn.facebook:hover {
+    background-color: #0072b1; /* Cor do Twitter */
+}
+
 .social-btn:active {
     transform: scale(1.1);
     transition-duration: 0.3s;
