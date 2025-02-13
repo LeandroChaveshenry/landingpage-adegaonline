@@ -1,0 +1,989 @@
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.otf');
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/Poppins-Regular.otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-background: #fffdf7;
+    --color-black: #212121;
+    --color-black-heavy: #000000;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-primary: #ffbf00;
+    --color-secondary: #fff2cc;
+    --color-white: #ffffff;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-separate: #cccccc;
+}
+
+
+html,
+body {
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+b {
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+}
+
+.header {
+    position: fixed;
+    /* Torna o header fixo */
+    top: 0;
+    /* Fixa no topo da página */
+    left: 0;
+    /* Alinha à esquerda */
+    right: 0;
+    /* Alinha à direita */
+    padding: 0;
+    z-index: 50;
+    /* Garante que fique acima de outros elementos */
+    background-color: var(--color-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para destaque */
+}
+
+
+
+
+.hidden {
+    display: none !important;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+
+
+a.navbar-brand {
+    margin-left: -25px;
+}
+
+.nav-item {
+    font-size: 19px;
+}
+
+.nav-link {
+    color: var(--color-black) !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-black) !important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-white.active,
+.btn-white:hover {
+    background-color: var(--color-primary);
+
+}
+
+.btn-icon {
+    padding-right: 75px;
+}
+
+.btn-icon .icon {
+    display: inline-block;
+    color: var(--color-black);
+    background-color: var(--color-primary);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.banner {
+    padding-top: 250px;
+    padding-bottom: 200px;
+
+}
+
+.text-banner {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.text-banner h1 {
+    color: var(--color-black);
+    font-size: 60px;
+}
+
+.text-banner p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.btn-yellow {
+    background-color: var(--color-green);
+    color: var(--color-white) !important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.reserva .btn-yellow {
+    background-color: var(--color-primary);
+    color: var(--color-white) !important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-yellow:hover {
+    background-color: var(--color-white);
+    color: var(--color-black) !important;
+
+}
+
+.btn-icon-left {
+    padding-left: 70px;
+}
+
+.btn-icon-left span.icon-left {
+    display: inline-block;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.btn-sm {
+    padding: 9px 15px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+}
+
+.btn-social {
+    width: 50px;
+}
+
+
+
+.img-banner img {
+    position: relative;
+    width: 700px;
+
+}
+
+.card-body {
+    padding: 0 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+
+.card {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    border: solid 1px #ffbf00 !important;
+    height: 100%;
+    background-color: transparent !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .icons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card .icons:hover i {
+    color: var(--color-white);
+}
+
+.card-body p {
+    font-size: 1em;
+    font-weight: 300;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.card:hover {
+    background-color: var(--color-primary) !important;
+    transform: translateY(-5px);
+}
+
+.card img {
+    transition: transform 0.3s ease;
+    padding-bottom: 9.2px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    /* Zoom de 10% na imagem */
+
+
+}
+
+.card-case {
+    width: 350px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+}
+
+.card-case-name {
+    position: absolute;
+    font-size: 12px;
+    color: var(--color-primary);
+    right: 20px;
+    bottom: 10px;
+}
+
+.servicos {
+    padding-bottom: 150px;
+}
+
+.hint-title {
+    color: var(--color-primary);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.title {
+    color: var(--color-black);
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.card-icon {
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    color: var(--color-black-heavy);
+    font-size: 15px;
+    padding: 0px 30px;
+}
+
+.card-text p {
+    font-size: 22px;
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+
+.background-servicos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-2.png);
+}
+
+.cardapio {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.cardapio .background-cardapio {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-1.png);
+}
+
+.container-menu {
+    margin-bottom: 40px;
+}
+
+.card-item {
+    height: 360px;
+}
+
+.card-item .img-produto img {
+    width: 100%;
+    border-radius: 11px;
+}
+
+.card-item .title-produto {
+    color: var(--color-black);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 0px;
+}
+
+.card-item .price-produto {
+    color: var(--color-primary);
+    font-size: 24px;
+}
+
+.card-item .add-carrinho {
+    display: none;
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-menos {
+    color: var(--color-black-heavy);
+    padding: 5px 7px;
+    border: 2px solid var(--color-black-heavy);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-mais {
+    color: var(--color-black-heavy);
+    padding: 5px 7px;
+    border: 2px solid var(--color-black-heavy);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-numero-itens {
+    color: var(--color-black-heavy);
+    padding: 2px 15px;
+    border-top: 2px solid var(--color-black-heavy);
+    border-bottom: 2px solid var(--color-black-heavy);
+    font-size: 18px;
+}
+
+.btn-add {
+    border: 2px solid var(--color-black-heavy);
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: var(--color-white);
+    background-color: var(--color-black-heavy);
+    margin-left: 15px;
+}
+
+.card-item:hover {
+    background-color: var(--color-primary);
+}
+
+.card-item:hover .title-produto {
+    display: none;
+}
+
+.card-item:hover .add-carrinho {
+    display: flex;
+}
+
+.card-item:hover .price-produto {
+    color: var(--color-black-heavy) !important;
+    margin-top: 20px;
+}
+
+
+.depoimentos {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.background-depoimentos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/icons3.png);
+    background-repeat: no-repeat;
+}
+
+.card-depoimentos {
+    height: 390px;
+    width: 390px;
+    border-radius: 120px;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+}
+
+.container-dados-depoimento {
+    display: flex;
+}
+
+.depoimento {
+    margin-top: 70px;
+}
+
+.imagem-depoimento {
+    width: 65px;
+    height: 65px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+
+#depoimento-1 .imagem-depoimento {
+    background-image: url(../img/diego.jpg);
+    background-size: cover;
+}
+
+#depoimento-2 .imagem-depoimento {
+    background-image: url(../img/ana.jpg);
+    background-size: cover;
+}
+
+#depoimento-3 .imagem-depoimento {
+    background-image: url(../img/joao.jpg);
+    background-size: cover;
+}
+
+.nome-depoimento {
+    color: var(--color-black);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.nota-depoimento {
+    color: var(--color-primary);
+}
+
+.nota-depoimento span {
+    color: var(--color-black);
+}
+
+.texto-depoimento {
+    display: flex;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.texto-depoimento i {
+    font-size: 35px;
+    color: var(--color-primary);
+}
+
+.texto-depoimento i:first-child {
+    padding-left: 10px;
+    padding-right: 35px;
+}
+
+.texto-depoimento i:last-child {
+    padding-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.reserva {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-secondary {
+    background-color: var(--color-secondary);
+    border-radius: 70px;
+    padding: 90px;
+}
+
+.card-reserva {
+    height: 320px;
+    width: 320px;
+    border-radius: 120px;
+    background-color: var(--color-white);
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+
+.reserva .img-banner img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    height: 150px;
+}
+
+.logo-footer {
+    width: 150px;
+}
+
+.container-logo-footer,
+.container-texto-footer,
+.container-redes-footer {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo-footer {
+    justify-content: start;
+}
+
+.container-texto-footer {
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container-redes-footer {
+    justify-content: end;
+    padding-top: 50px;
+}
+
+.modal-full {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px;
+    background: var(--color-white);
+    z-index: 9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-header {
+    padding-bottom: 20px;
+}
+
+.m-body {
+    flex: 1;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.m-body::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+.m-body::-webkit-scrollbar-thumb {
+    background: var(--color-white);
+}
+
+.m-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.etapas {
+    display: flex;
+}
+
+.etapa {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.etapa::before {
+    content: '';
+    width: 20px;
+    background-color: var(--color-separate);
+    position: absolute;
+    height: 2px;
+    margin-left: 55px;
+}
+
+.etapa:last-child::before {
+    content: none;
+}
+
+.etapa.active,
+.etapa.active::before {
+    background-color: var(--color-primary);
+}
+
+
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+}
+
+.btn-whatsapp img {
+    max-width: 57px;
+    transition: transform 0.4s;
+}
+
+.btn-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #232224;
+    color: #FFF;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-whatsapp img {
+        max-width: 45px;
+
+    }
+
+
+}
+
+
+.card-pedido {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text-pedido {
+    color: var(--color-text-out);
+    font-size: 15px;
+    padding: 0px 30px;
+    margin-top: 30px;
+
+}
+
+.card-text-pedido p {
+    font-size: 22px;
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner {
+        margin-top: 150px;
+
+    }
+}
+
+
+/*Estilo dos botoes de contattos*/
+
+section.contato {
+    background-color: var(--color-secondary);
+    padding: 80px 0;
+}
+
+.txt-contato,
+.icons-contato {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3 {
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 100;
+    margin-bottom: 20px;
+
+
+}
+
+.contato .txt-contato h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contato a {
+    text-decoration: none;
+}
+
+.contato .container .icons-contato button p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    margin-right: 0;
+
+}
+
+
+.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 40px;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.contato .icons-contato button i {
+    font-size: 24px;
+}
+
+.contato .icons-contato button:hover {
+    background-color: #000;
+}
+
+.contato .icons-contato button:hover i,
+.contato .icons-contato button:hover p {
+    color: #fff;
+}
+
+/* Estilos para o carrossel */
+.carousel-item .row {
+    display: flex;
+    justify-content: space-between; /* Mantém espaço entre os cards */
+    align-items: flex-start; /* Alinha os itens no topo */
+    margin-right: 10px;
+   
+}
+
+/* Custom Card */
+.custom-card {
+    width: 105%  !important; /* Largura ajustada para combinar com o exemplo */
+    height: 254px; /* Altura ajustada */
+    background: var(--color-black); /* Cor de fundo principal */
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Para alinhar o conteúdo verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    overflow: hidden;
+    border-radius: 20px; /* Bordas arredondadas */
+    margin: 10px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Título do Card */
+.custom-card h5 {
+    z-index: 1;
+    color: var(--color-primary); /* Cor do texto do título */
+    font-size: 1.5em !important; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+    text-align: center; /* Centraliza o texto do título */
+    font-weight: 300;
+    white-space: nowrap; /* Impede a quebra de linha */
+    
+
+}
+
+.custom-card p {
+    z-index: 1;
+    color: var(--color-background); /* Cor do texto da descrição */
+    text-align: center !important; /* Centraliza o texto */
+    margin: 5px 0 0; /* Margem para o parágrafo */
+    font-size: 1.2em !important;
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    width: 100px; /* Largura do efeito */
+    background-image: linear-gradient(180deg, var(--color-primary), var(--color-red)); /* Gradiente com cores variáveis */
+    height: 130%;
+    animation: rotBGimg 3s linear infinite; /* Animação de rotação */
+    transition: all 0.2s linear;
+    top: -15%; /* Ajusta a posição do efeito */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza */
+    border-radius: 50%; /* Bordas arredondadas no efeito */
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg) translateX(-50%);
+    }
+    to {
+        transform: rotate(360deg) translateX(-50%);
+    }
+}
+
+.custom-card::after {
+    content: '';
+    position: absolute;
+    background: var(--color-black); /* Cor de fundo do card */
+    inset: 5px; /* Inseto para criar um efeito de borda */
+    border-radius: 15px; /* Bordas arredondadas internas */
+}
+
+/* Efeito de hover opcional */
+.custom-card:hover::before {
+    background-image: linear-gradient(180deg, var(--color-green), var(--color-primary)); /* Gradiente alterado ao passar o mouse */
+    animation: rotBGimg 7.5s linear infinite; /* Animação de rotação */
+}
+
+
+/* Estilos para os controles do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 100px;
+}
+
+.carousel-control-next-icon {
+    margin-left: 100px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-inner .carousel-item h5 {
+    font-size: 1.1em;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner .carousel-item p {
+    font-size: 1.1em;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+/* Estilo para o footer social */
+.social-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(117, 117, 117, 0);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.social-btn:hover {
+    transform: rotate(360deg) scale(1.2); /* Rotação e aumento */
+    border-radius: 15px;
+}
+
+.social-btn.social-instagram:hover {
+    background-color: #d62976;
+}
+
+.social-btn.social-facebook:hover {
+    background-color: #3b5998; /* Cor do Facebook */
+}
+
+.social-btn.social-whatsapp:hover {
+    background-color: #25d366;
+}
+
+.social-btn.social-linkedin:hover {
+    background-color: #0072b1; /* Cor do LinkedIn */
+}
+
+.social-btn.social-twitter:hover {
+    background-color: #00acee; /* Cor do Twitter */
+}
+
+.social-btn:active {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.social-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: rgb(0, 0, 0); /* Ícone preto por padrão */
+    transition: fill 0.3s ease; /* Transição suave para a cor */
+}
+
+.social-btn:hover svg {
+    fill: rgb(255, 255, 255); /* Ícone branco ao passar o mouse */
+}

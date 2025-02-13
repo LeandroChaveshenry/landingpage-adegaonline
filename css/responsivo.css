@@ -1,0 +1,300 @@
+/* Desktop (col-lg) 992px+ */
+@media (min-width: 992px) {}
+
+/* Desktop e Tablets (col-md) 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Tablets (col-sm) 576px a 767px */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Tablets e Celulares (col) 0px a 767px */
+@media (max-width: 767px) {
+
+    .no-mobile {
+        display: none !important;
+    }
+
+    .col-one {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+
+    .navbar-toggler-icon {
+        padding-top: 5px;
+    }
+
+    .navbar-collapse {
+        background-color: var(--color-white);
+        padding: 20px;
+        text-align: center;
+        border-radius: 40px;
+        margin-top: 5px;
+    }
+
+    .navbar-collapse .btn-white {
+        margin-top: 20px;
+    }
+
+    .navbar-collapse .btn-icon {
+        padding-right: 20px;
+    }
+
+    .navbar-collapse .btn-icon span.icon {
+        display: none;
+    }
+
+    .banner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text-banner h1 {
+        font-size: 36px;
+    }
+
+    .text-banner p {
+        font-size: 18px;
+    }
+
+    .btn-contato{
+        display: block !important;
+    }
+
+    .btn-yellow,
+    .btn-white {
+        padding: 13px 23px;
+        font-size: 18px;
+    }
+
+    .btn-icon-left span.icon-left {
+        width: 43px;
+        height: 43px;
+        margin-left: -56px;
+    }
+
+    .btn-icon-left {
+        padding-left: 63px !important;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .servicos {
+        padding-bottom: 50px;
+    }
+
+    .cardapio {
+        padding-bottom: 50px;
+    }
+
+    .container-menu {
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        padding-bottom: 15px;
+    }
+
+    .img-produto {
+        position: absolute;
+        left: 15px
+    }
+
+    .card img{
+        padding-right: 25px;
+    }
+
+    .card-item {
+        height: 110px;
+        padding-left: 110px;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .card-item .img-produto img {
+        width: 80px;
+    }
+
+    .title-produto {
+        margin-top: 0px !important;
+        height: 30px !important;
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .price-produto {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        font-size: 22px !important;
+    }
+
+    .card-item .add-carrinho {
+        margin-top: 5px;
+    }
+
+    #itensCardapio .mb-5 {
+        margin-bottom: 15px !important;
+    }
+
+    .depoimentos {
+        padding-bottom: 50px;
+    }
+
+    .reserva {
+        padding-bottom: 50px;
+    }
+
+    .card-secondary {
+        padding: 45px;
+        border-radius: 50px;
+    }
+
+    footer{
+        height: 100%;
+    }
+
+    .container-logo-footer {
+        justify-content: center;
+    }
+
+    .container-texto-footer p {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .container-redes-footer {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .modal-full {
+        padding: 40px;
+    }
+
+    .modal-full .item-carrinho {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .modal-full .img-produto {
+        position: relative;
+        left: 0;
+    }
+
+    .modal-full .img-produto img {
+        width: 50px;
+    }
+
+    .modal-full .dados-produto {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+    }
+
+    .modal-full .title-produto,
+    .modal-full .price-produto {
+        font-size: 16px !important;
+    }
+
+    .modal-full .add-numero-itens {
+        padding: 2px 10px;
+    }
+
+    .modal-full .form-control {
+        font-size: 16px;
+    }
+
+    /* contato responsivo */
+
+    .txt-contato,
+    .icons-contato {
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .contato .txt-contato h3 {
+        font-size: 2em;
+        line-height: 40px;
+
+    }
+
+
+    .contato .icons-contato a {
+        text-decoration: none;
+
+    }
+
+    .contato .icons-contato button a {
+        text-align: center;
+
+    }
+
+    .contato .container .icons-contato button p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+
+    }
+
+    .contato .container .icons-contato button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+
+
+
+        width: 100%;
+        height: 60px;
+        margin: 0 auto 20px auto;
+        padding: 0 60px;
+
+        background-color: transparent;
+        border: 2px solid #000;
+        cursor: pointer;
+
+        transition: 0.5s;
+    }
+
+    .contato .icons-contato button i {
+        font-size: 24px;
+    }
+
+    .contato .icons-contato button:hover {
+        background-color: #000;
+    }
+
+    /* responsivo carousel*/
+
+    .carousel-item .row {
+        flex-wrap: nowrap;
+        /* Impede que os cards quebrem para a próxima linha */
+        overflow-x: auto;
+        /* Permite rolagem horizontal */
+    }
+
+    .carousel-item .col-md-3 {
+        flex: 0 0 100%;
+        /* Exibe apenas um card por vez */
+        max-width: 100%;
+        margin: 0;
+        /* Remove o espaçamento entre os cards */
+    }
+
+    .custom-card {
+
+        margin: 0 auto;
+        width: auto;
+    }
+
+    
+
+
+
+}
