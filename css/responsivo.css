@@ -239,6 +239,7 @@
         justify-content: center;
         align-items: center;
         padding-top: 15px;
+        color: var(--color-black-heavy) !important;
 
     }
 
@@ -264,6 +265,7 @@
 
     .contato .icons-contato button i {
         font-size: 24px;
+        color: var(--color-black-heavy) !important;
     }
 
     .contato .icons-contato button:hover {
@@ -271,6 +273,19 @@
     }
 
     /* responsivo carousel*/
+
+    .custom-card h5 {
+        z-index: 1;
+        font-size: 2em !important; /* Tamanho da fonte */
+        font-weight: 300;
+        white-space: nowrap; /* Impede a quebra de linha */
+        padding-top: 5px;
+    }
+
+    .custom-card p {
+        z-index: 1;
+        font-size: 1.6em !important;
+    }
 
     .carousel-item .row {
         flex-wrap: nowrap;

@@ -771,6 +771,7 @@ section.contato {
     align-items: center;
     padding-top: 15px;
     margin-right: 0;
+    color: var(--color-black-heavy) !important;
 
 }
 
@@ -795,6 +796,7 @@ section.contato {
 
 .contato .icons-contato button i {
     font-size: 24px;
+    color: var(--color-black-heavy) !important;
 }
 
 .contato .icons-contato button:hover {
@@ -840,8 +842,6 @@ section.contato {
     text-align: center; /* Centraliza o texto do título */
     font-weight: 300;
     white-space: nowrap; /* Impede a quebra de linha */
-    
-
 }
 
 .custom-card p {
@@ -849,7 +849,7 @@ section.contato {
     color: var(--color-background); /* Cor do texto da descrição */
     text-align: center !important; /* Centraliza o texto */
     margin: 5px 0 0; /* Margem para o parágrafo */
-    font-size: 1.2em !important;
+    font-size: 1.5em !important;
 }
 
 .custom-card::before {
