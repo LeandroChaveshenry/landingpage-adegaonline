@@ -123,8 +123,8 @@ a.navbar-brand {
 }
 
 .banner {
-    padding-top: 250px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 
 }
 
@@ -282,7 +282,7 @@ a.navbar-brand {
 }
 
 .servicos {
-    padding-bottom: 150px;
+    padding: 50px 0;
 }
 
 .hint-title {
@@ -329,8 +329,8 @@ a.navbar-brand {
 }
 
 .cardapio {
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding: 50px 0;
+    background-color: var(--color-secondary);
 }
 
 .cardapio .background-cardapio {
@@ -433,8 +433,7 @@ a.navbar-brand {
 
 
 .depoimentos {
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding: 50px 0;
 }
 
 .background-depoimentos {
@@ -991,3 +990,83 @@ section.contato {
 .social-btn:hover svg {
     fill: rgb(255, 255, 255); /* Ícone branco ao passar o mouse */
 }
+
+/* Novos Cards com Imagens */
+.novos-cards {
+    padding: 60px 0;
+    background-color: #a03939;
+}
+
+.novos-cards .title{
+    color: var(--color-background);
+}
+
+.cards-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 400ms, box-shadow 400ms;
+    
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-image .tip p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--color-background);
+}
+
+/* Efeito de desfoque nos cards não hover */
+.cards-container:hover > .card-image:not(:hover) {
+    filter: blur(5px);
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: filter 400ms, transform 400ms, opacity 400ms;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image:hover p.tip {
+    opacity: 1;
+    
+}
+
+.card-image.red {
+    border: 2px solid #ff6b6b;
+}
+
+.card-image.blue {
+    border: 2px solid #4dabf7;
+}
+
+.card-image.green {
+    border: 2px solid #51cf66;
+}
+
+.card-image.yellow {
+    border: 2px solid var(--color-primary);
+}
+
