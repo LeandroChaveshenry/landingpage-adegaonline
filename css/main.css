@@ -551,7 +551,7 @@ a.navbar-brand {
 
 footer {
     background-color: var(--color-secondary);
-    height: 150px;
+    height: 100%;
 }
 
 .logo-footer {
@@ -804,7 +804,7 @@ section.contato {
 
 .contato .icons-contato button:hover i,
 .contato .icons-contato button:hover p {
-    color: #fff;
+    color: var(--color-background) !important;
 }
 
 /* Estilos para o carrossel */
@@ -1068,5 +1068,15 @@ section.contato {
 
 .card-image.yellow {
     border: 2px solid var(--color-primary);
+}
+
+footer li a{
+    color: var(--color-black-heavy);
+    text-decoration: none;
+}
+footer li a:hover{
+    text-decoration: none;
+    color: var(--color-text);
+    
 }
 

@@ -155,6 +155,7 @@
 
     .container-logo-footer {
         justify-content: center;
+        margin-top: 20px;
     }
 
     .container-texto-footer p {
@@ -272,13 +273,20 @@
         background-color: #000;
     }
 
+    .contato .icons-contato button:hover i,
+    .contato .icons-contato button:hover p {
+        color: var(--color-background) !important;
+    }
+
     /* responsivo carousel*/
 
     .custom-card h5 {
         z-index: 1;
-        font-size: 2em !important; /* Tamanho da fonte */
+        font-size: 2em !important;
+        /* Tamanho da fonte */
         font-weight: 300;
-        white-space: nowrap; /* Impede a quebra de linha */
+        white-space: nowrap;
+        /* Impede a quebra de linha */
         padding-top: 5px;
     }
 
@@ -309,7 +317,7 @@
     }
 
     .carousel-control-prev-icon,
-    .carousel-control-next-icon{
+    .carousel-control-next-icon {
         display: none;
     }
 
@@ -317,7 +325,7 @@
 
     .cards-container {
         display: block;
-        
+
     }
 
     .card-image {
@@ -329,7 +337,7 @@
         cursor: pointer;
         transition: transform 400ms, box-shadow 400ms;
         margin-top: 30px;
-        
+
     }
 
     .card-image img {
