@@ -93,6 +93,35 @@
         padding-bottom: 50px;
     }
 
+    .sobrenos{
+        padding: 50px 5px;
+    }
+
+    .sobre-nos-texto {
+        text-align: center;
+        
+    }
+
+    .sobre-nos-titulo {
+        font-size: 2em;
+        
+    }
+
+    .sobre-nos-descricao {
+        font-size: 1em;
+        text-align: left;
+        margin-left: 0px;
+        
+    }
+
+    .sobre-nos-imagens {
+        margin-top: 20px;
+    }
+
+    .sobre-nos-imagens img {
+        display: none;
+    }
+
     .cardapio {
         padding-bottom: 50px;
     }

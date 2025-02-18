@@ -123,7 +123,7 @@ a.navbar-brand {
 }
 
 .banner {
-    padding-top: 100px;
+    padding-top: 250px;
     padding-bottom: 50px;
 
 }
@@ -211,7 +211,9 @@ a.navbar-brand {
     text-align: left;
 }
 
-
+.app{
+    margin-top: 100px;
+}
 
 .app .card {
     border-radius: 20px;
@@ -327,6 +329,54 @@ a.navbar-brand {
     height: 500px;
     background-image: url(../img/bg-icons-2.png);
 }
+
+/* Estilos para a seção "Sobre Nós" */
+
+.sobrenos{
+    background-color: var(--color-secondary);
+    padding: 50px;
+}
+
+
+.sobre-nos-texto {
+    padding: 20px;
+    width: 100%; /* Garante que o texto ocupe toda a largura */
+}
+
+.sobre-nos-titulo {
+    font-size: 2.5em;
+    color: var(--color-black);
+    margin-bottom: 20px;
+    padding-bottom: 10px; /* Espaçamento entre o texto e a linha */
+    border-bottom: 3px solid var(--color-primary); /* Linha abaixo do título */
+    display: inline-block; /* Faz a linha ter o mesmo tamanho do texto */
+}
+
+.sobre-nos-descricao {
+    font-size: 1.2em;
+    color: var(--color-text);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    width: 100%; /* Garante que o texto ocupe toda a largura */
+}
+
+.sobre-nos-imagens{
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.sobre-nos-imagens img {
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%; /* Garante que as imagens ocupem toda a largura */
+    background-color: var(--color-background);
+    
+}
+
+
 
 .cardapio {
     padding: 50px 0;
@@ -926,6 +976,13 @@ section.contato {
     font-weight: 200;
 }
 
+/* Estilo para o mapa*/
+
+.mapa{
+    padding-top: 50px;
+    background-color: var(--color-background);
+}
+
 /* Estilo para o footer social */
 .social-card {
     display: flex;
@@ -994,11 +1051,11 @@ section.contato {
 /* Novos Cards com Imagens */
 .novos-cards {
     padding: 60px 0;
-    background-color: #a03939;
+    background-color: var(--color-secondary);
 }
 
 .novos-cards .title{
-    color: var(--color-background);
+    color: var(--color-black-heavy);
 }
 
 .cards-container {
@@ -1033,7 +1090,7 @@ section.contato {
     align-items: center;
     font-size: 1.2em;
     font-weight: 600;
-    color: var(--color-background);
+    color: var(--color-black-heavy);
 }
 
 /* Efeito de desfoque nos cards não hover */
