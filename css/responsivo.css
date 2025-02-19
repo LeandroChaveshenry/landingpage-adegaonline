@@ -52,6 +52,10 @@
         display: none;
     }
 
+    .img-logo{
+        width: 173px;
+    }
+
     .banner {
         padding-top: 50px;
         padding-bottom: 50px;
