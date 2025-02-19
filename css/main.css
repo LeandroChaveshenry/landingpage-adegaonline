@@ -259,15 +259,15 @@ a.navbar-brand {
 }
 
 .app .card img {
-    width: 100%;
+    width: 250px;
     /* Faz a imagem ocupar 100% da largura do card */
     height: auto;
     /* Mantém a proporção da imagem */
     margin-top: 20px;
     /* Espaçamento entre o texto e a imagem */
     transition: transform 0.3s ease;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    margin-left: 40px;
+  
 }
 
 .app .card:hover img {
